@@ -1,0 +1,45 @@
+{
+    "name": "Url-Shortener-bot",
+    "description": "Make short link by using Shortener Website API key",
+    "logo":"https://i.ibb.co/z6Rs1dz/automation-inspiration-URLshortener-00-hero.jpg",
+    "keywords": [
+        "telegram",
+        "shortener"
+    ],
+    "website": "https://github.com/kevinnadar22/URL-Shortener-bot",
+    "repository": "https://github.com/kevinnadar22/URL-Shortener-bot",
+    "env": {
+        "BOT_TOKEN": {
+            "description": "Your bot token",
+            "value": ""
+        },
+        "API_ID": {
+            "description": "Get this value from https://my.telegram.org",
+            "value": ""
+        },
+        "API_HASH": {
+            "description": "Get this value from https://my.telegram.org",
+            "value": ""
+        },
+        "WEBSITE": {
+            "description": "Any shortener website which you want to use. Ex. droplink.co (Note: Don't type https, /, : or anything like that. Only type the website name Ex: droplink.co)",
+            "value": ""
+        },
+        "API_KEY": {
+            "description": "Get API key from https://your_website/member/tools/api",
+            "value": ""
+        }
+    },
+    "addons": [],
+    "buildpacks": [
+        {
+            "url": "heroku/python"
+        }
+    ],
+    "formation": {
+        "worker": {
+            "quantity": 1,
+            "size": "free"
+        }
+    }
+}
